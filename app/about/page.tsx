@@ -44,7 +44,7 @@ const About = () => {
         <div>
           <h1 className="text-xl font-bold">About Me</h1>
           <p>
-            Hi, I'm Vyom Sagar, a passionate web developer focused on crafting
+            Hi, I&apos;m Vyom Sagar, a passionate web developer focused on crafting
             clean and user-friendly web experiences.
             <br /> Based in Delhi, I specialize in building modern websites and
             applications using technologies like Next.js and React.
@@ -67,19 +67,19 @@ const About = () => {
           <br />
           <h2 className="text-xl font-bold">Education</h2>
           <p>
-            I graduated in 2025 with a Bachelor’s degree in Computer Science.
+            I graduated in 2025 with a Bachelor&apos;s degree in Computer Science.
             <br /> My studies provided me with a solid foundation in software
             development, algorithms, and problem-solving skills.
           </p>
           <br />
           <h2>Interests</h2>
           <p>
-            When I’m not coding, you’ll find me exploring new technologies,
+            When I&apos;m not coding, you&apos;ll find me exploring new technologies,
             reading, or spending time outdoors. <br />I enjoy learning
             constantly and believe in the power of technology to make a positive
             impact.
           </p>
-          <h2>Let’s Connect</h2>
+          <h2>Let&apos;s Connect</h2>
           <p>
             I love meeting new people and collaborating on exciting projects.
             Feel free to <a href="/contact">reach out</a> or connect with me on{" "}

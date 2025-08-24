@@ -1,10 +1,8 @@
 import { BackgroundLines } from "@/components/ui/background-lines";
 import { CardCarousel } from "@/components/ui/card-carousel";
-import { CometCard } from "@/components/ui/comet-card";
 import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 import { Cover } from "@/components/ui/cover";
 import { FloatingDock } from "@/components/ui/floating-dock";
-import { h1 } from "framer-motion/client";
 import React from "react";
 import { IoHome, IoPerson, IoReaderOutline, IoRibbon, IoSchool } from "react-icons/io5";
 import { TextScroll } from "@/components/ui/text-scroll"
@@ -73,7 +71,7 @@ const Page = () => {
               </h1>
 
               <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mt-2">
-                I'M <Cover>VYOM SAGAR</Cover>
+                I&apos;M <Cover>VYOM SAGAR</Cover>
               </h2>
             </div>
 
