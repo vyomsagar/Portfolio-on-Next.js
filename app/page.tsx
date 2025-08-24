@@ -1,103 +1,135 @@
-import Image from "next/image";
+import { BackgroundLines } from "@/components/ui/background-lines";
+import { CardCarousel } from "@/components/ui/card-carousel";
+import { CometCard } from "@/components/ui/comet-card";
+import { ContainerScroll } from "@/components/ui/container-scroll-animation";
+import { Cover } from "@/components/ui/cover";
+import { FloatingDock } from "@/components/ui/floating-dock";
+import { h1 } from "framer-motion/client";
+import React from "react";
+import { IoHome, IoPerson, IoReaderOutline, IoRibbon, IoSchool } from "react-icons/io5";
+import { TextScroll } from "@/components/ui/text-scroll"
+import { LampContainer } from "@/components/ui/lamp";
+import WrapButton from "@/components/ui/wrap-button";
 
-export default function Home() {
+const Page = () => {
+  const images = [
+     {
+      src: "/avtar1.svg",
+      alt: "Project 1",
+      href: "https://github.com/yourusername/project1",
+    },
+    {
+      src: "/flask.svg",
+      alt: "Project 2",
+      href: "https://your-website.com/project2",
+    },
+    {
+      src: "/c.svg",
+      alt: "Project 3",
+      href: "https://vercel.com",
+    },
+  ]
+ 
+
+
+  const items = [
+     {
+    title: "Home",
+    icon: <IoHome className="w-6 h-6"/>,
+    href: "/",
+  },
+  {
+    title: "About",
+    icon: <IoPerson className="w-6 h-6" />,
+    href: "/about"
+  },
+  {
+    title: "Skills",
+    icon: <IoRibbon className="w-6 h-6" />,
+    href: "/skills"
+  },
+  {
+    title: "Resume",
+    icon: <IoSchool className="w-6 h-6" />,
+    href: "/vyom-sagar.pdf"
+  }
+  ]
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="text-white">
+      <FloatingDock 
+        items={items} 
+        desktopClassName="fixed bottom-6 left-1/2 -translate-x-1/2 shadow-lg z-99"
+        mobileClassName="fixed bottom-6 right-6 z-99"></FloatingDock>
+      <LampContainer >
+<div >
+          <BackgroundLines className="w-full ">
+        <div className="flex flex-col items-center justify-center  max-w-xl">
+            <div className="mb-4">
+              <h1 className="text-lg sm:text-xl md:text-2xl font-bold heading">
+                Hi There!{" "}
+                <span className="wave" role="img" aria-labelledby="wave">
+                  👋🏻
+                </span>
+              </h1>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mt-2">
+                I'M <Cover>VYOM SAGAR</Cover>
+              </h2>
+            </div>
+
+            <div className=" text-center">
+              <h1 className="text-lg sm:text-xl md:text-2xl font-bold">
+                LET ME <span className="purple">INTRODUCE</span> MYSELF
+              </h1>
+              <p className="home-about-body mt-2 leading-relaxed text-sm sm:text-base">
+                I’m a passionate developer who enjoys building practical and
+                creative solutions for the web.
+                <br />
+                I have a good understanding of{" "}
+                <b className="purple">C, C++, Java, and JavaScript.</b>
+                <br />
+                My interests lie in developing modern{" "}
+                <b className="purple">web applications</b>.
+                {/* <br />
+                <br />
+                I work with <b className="purple">Node.js</b> for backend
+                development and enjoy building UIs with{" "}
+                <b className="purple">React.js and Tailwind CSS</b>.
+                <br />
+                Currently, I’m learning <b className="purple">Next.js</b>, and
+                this portfolio is built using <b className="purple">Next.js</b>.
+                <br />
+                I’m continuously learning and love contributing to projects when
+                I can.*/}
+                <WrapButton className="mt-10 relative z-10" href="/vyom-sagar.pdf" >
+            <IoReaderOutline className="animate-spin "/>
+            My Resume
+        </WrapButton>
+              </p> 
+            </div>
+          </div>
+         
+      </BackgroundLines>
+       
+      
+      
+</div>
+      <TextScroll className="mt-40 w-[100vw]" text="Hello I'm Vyom Sagar" />
+      </LampContainer>
+
+      <ContainerScroll titleComponent={<h1></h1>}>
+        <div>
+          <CardCarousel images={images}
+          autoplayDelay={2000}
+          showPagination={false} 
+          showNavigation={true}
+          />
+
+
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </ContainerScroll>
     </div>
   );
-}
+};
+
+export default Page;
