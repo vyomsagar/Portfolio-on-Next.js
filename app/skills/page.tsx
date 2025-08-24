@@ -2,7 +2,8 @@ import { HyperText } from "@/components/magicui/hyper-text";
 import { IconCloud } from "@/components/magicui/icon-cloud";
 import { FloatingDock } from "@/components/ui/floating-dock";
 import MaskedDiv from "@/components/ui/masked-div";
-import { IoHome, IoPerson, IoReaderOutline, IoRibbon, IoSchool } from "react-icons/io5";
+import { IoHome, IoPerson, IoRibbon, IoSchool } from "react-icons/io5";
+import Image from "next/image";
 
 const slugs = [
   "typescript",
@@ -56,7 +57,7 @@ export const allSkillsData = [
   {
     title: "C++",
     desc: "Proficient in C++ with OOPs, STL, templates, and competitive programming.",
-    img: "https://cdn.simpleicons.org/cplusplus",
+    img: "https://img.icons8.com/?size=100&id=40669&format=png&color=000000",
     level1: "Advanced",
     level2: "STL & OOPs",
   },
@@ -65,28 +66,28 @@ export const allSkillsData = [
   {
     title: "HTML",
     desc: "Strong grasp of semantic HTML and modern markup standards.",
-    img: "https://cdn.simpleicons.org/html5",
+    img: "https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg",
     level1: "Advanced Level",
     level2: "SEO & Accessibility Friendly",
   },
   {
     title: "CSS",
     desc: "Proficient in styling, animations, and responsive design.",
-    img: "https://img.icons8.com/?size=100&id=7gdY5qNXaKC0&format=png&color=000000",
+    img: "https://www.vectorlogo.zone/logos/w3_css/w3_css-icon~old.svg",
     level1: "Advanced Level",
     level2: "Flexbox, Grid, Media Queries",
   },
   {
     title: "JavaScript",
     desc: "Skilled in modern JS including ES6+, DOM manipulation, and APIs.",
-    img: "https://cdn.simpleicons.org/javascript",
+    img: "https://www.vectorlogo.zone/logos/javascript/javascript-ar21~alt.svg",
     level1: "Advanced Level",
     level2: "Asynchronous Programming, Fetch API",
   },
   {
     title: "React",
     desc: "Building dynamic web apps using components, hooks, and routing.",
-    img: "https://cdn.simpleicons.org/react",
+    img: "https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg",
     level1: "Advanced Level",
     level2: "Hooks, State Management, Routing",
   },
@@ -95,21 +96,21 @@ export const allSkillsData = [
   {
     title: "PHP",
     desc: "Have experience building basic backend logic and forms using PHP and XAMPP.",
-    img: "https://cdn.simpleicons.org/php",
+    img: "https://www.vectorlogo.zone/logos/php/php-icon.svg",
     level1: "Intermediate Level",
     level2: "Form Handling, MySQL Integration",
   },
   {
     title: "Node.js",
     desc: "Currently learning Node.js to build backend APIs and work with MongoDB.",
-    img: "https://cdn.simpleicons.org/node.js",
+    img: "https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg",
     level1: "Beginner to Intermediate",
     level2: "Express.js, REST APIs (In Progress)",
   },
   {
     title: "Flask",
     desc: "Experience in building RESTful APIs using Flask. Created basic backend logic and handled routing, requests, and JSON responses.",
-    img: "https://img.icons8.com/?size=100&id=hCWb1IvpcBZ0&format=png&color=000000",
+    img: "https://www.vectorlogo.zone/logos/palletsprojects_flask/palletsprojects_flask-icon~v2.svg",
     level1: "Beginner to Intermediate",
     level2: "Flask, REST APIs",
   },
@@ -118,14 +119,14 @@ export const allSkillsData = [
   {
     title: "SQL",
     desc: "Comfortable writing queries, joins, and designing relational schemas.",
-    img: "https://cdn.simpleicons.org/mysql",
+    img: "https://www.vectorlogo.zone/logos/sqlite/sqlite-ar21~bgwhite.svg",
     level1: "Intermediate Level",
     level2: "MySQL, XAMPP, phpMyAdmin",
   },
   {
     title: "MongoDB",
     desc: "Working knowledge of NoSQL database used in MERN stack projects.",
-    img: "https://cdn.simpleicons.org/mongodb",
+    img: "https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg",
     level1: "Beginner to Intermediate",
     level2: "CRUD Operations, Mongoose (In Progress)",
   },
@@ -134,14 +135,14 @@ export const allSkillsData = [
   {
     title: "Tailwind CSS",
     desc: "Utility-first CSS for building modern, responsive UI quickly.",
-    img: "https://cdn.simpleicons.org/tailwindcss",
+    img: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
     level1: "Advanced Level",
     level2: "Mobile-first & Custom Themes",
   },
   {
     title: "Bootstrap",
     desc: "Fast prototyping with prebuilt responsive components.",
-    img: "https://cdn.simpleicons.org/bootstrap",
+    img: "https://upload.vectorlogo.zone/logos/getbootstrap/images/987f8f6c-263a-47b1-a85d-853cfca215d9.svg",
     level1: "Intermediate Level",
     level2: "Grid System, Utility Classes",
   },
@@ -155,35 +156,35 @@ export const allSkillsData = [
   {
     title: "XAMPP",
     desc: "PHP & MySQL local development with Apache stack.",
-    img: "https://cdn.simpleicons.org/xampp",
+    img: "https://www.apachefriends.org/images/xampp-logo-ac950edf.svg",
     level1: "Intermediate Level",
     level2: "Database Setup, Local Hosting",
   },
   {
     title: "GSAP",
     desc: "Creating animations for better interactivity in UI.",
-    img: "https://cdn.simpleicons.org/greensock",
+    img: "https://vectorwiki.com/images/vvUne__gsap-greensock.svg",
     level1: "Intermediate Level",
     level2: "Scroll Animations, Timelines",
   },
   {
     title: "WordPress",
     desc: "Experience in customizing themes and working with plugins.",
-    img: "https://cdn.simpleicons.org/wordpress",
+    img: "https://www.vectorlogo.zone/logos/wordpress/wordpress-icon.svg",
     level1: "Intermediate Level",
     level2: "Theme Customization, Blogging",
   },
   {
     title: "Git",
     desc: "Version control with Git CLI and GitHub integration.",
-    img: "https://cdn.simpleicons.org/git",
+    img: "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
     level1: "Advanced Level",
     level2: "Branching, Merging, Conflict Handling",
   },
   {
     title: "GitHub",
     desc: "Code collaboration, repositories, and GitHub Pages.",
-    img: "https://cdn.simpleicons.org/github",
+    img: "https://www.vectorlogo.zone/logos/github/github-tile.svg",
     level1: "Advanced Level",
     level2: "Pull Requests, Project Management",
   },
@@ -240,7 +241,7 @@ const skills = () => {
                 backgroundColor="bg-slate-700"
                 className="mb-4 w-full max-w-[160px]"
               >
-                <img src={img} alt={title} className="w-full h-auto" />
+                <Image src={img} alt={title} width={100} height={100} className="w-full h-auto" />
               </MaskedDiv>
               <h3 className="text-white font-semibold text-lg">{title}</h3>
               <p className="text-gray-400 text-sm mt-1">{desc}</p>

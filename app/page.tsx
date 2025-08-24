@@ -82,7 +82,7 @@ const Page = () => {
                 LET ME <span className="purple">INTRODUCE</span> MYSELF
               </h1>
               <p className="home-about-body mt-2 leading-relaxed text-sm sm:text-base">
-                I’m a passionate developer who enjoys building practical and
+                I&apos;m a passionate developer who enjoys building practical and
                 creative solutions for the web.
                 <br />
                 I have a good understanding of{" "}
