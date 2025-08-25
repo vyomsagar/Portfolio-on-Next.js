@@ -230,7 +230,7 @@ const skills = () => {
       <div className="text-center">
         <HyperText className="text-slate-100 font-bold">Skills i have</HyperText>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10 w-full max-w-7xl px-4">
-          {allSkillsData.map(({ title, desc, img, level1, level2 }, idx) => (
+          {allSkillsData.map(({ title, desc, img, level1, level2 }) => (
             <div
               key={title}
               className="skill-card bg-slate-900 rounded-xl p-4 shadow-lg flex flex-col items-center text-center"

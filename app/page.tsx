@@ -88,17 +88,7 @@ const Page = () => {
                 <br />
                 My interests lie in developing modern{" "}
                 <b className="purple">web applications</b>.
-                {/* <br />
-                <br />
-                I work with <b className="purple">Node.js</b> for backend
-                development and enjoy building UIs with{" "}
-                <b className="purple">React.js and Tailwind CSS</b>.
-                <br />
-                Currently, I’m learning <b className="purple">Next.js</b>, and
-                this portfolio is built using <b className="purple">Next.js</b>.
-                <br />
-                I’m continuously learning and love contributing to projects when
-                I can.*/}
+                
                 <WrapButton className="mt-10 relative z-10" href="/vyom-sagar.pdf" >
             <IoReaderOutline className="animate-spin "/>
             My Resume
