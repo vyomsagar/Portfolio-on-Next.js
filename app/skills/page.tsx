@@ -38,7 +38,7 @@ const slugs = [
   "figma",
 ];
 
-export const allSkillsData = [
+ const allSkillsData = [
   // Languages
   {
     title: "Java",
