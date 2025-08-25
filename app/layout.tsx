@@ -15,7 +15,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Portfolio-Vyom_Sagar",
   description: "A Portfolio website of Vyom Sagar developed by Vyom on Next.js",
-  icons: "/pageIcon.svg"
+  icons: {
+    icon: "/pageIcon.svg",          // Main icon for browsers
+    shortcut: "/pageIcon.svg",      // Shortcut icon (favicon)
+    apple: "/pageIcon.svg",         // Apple touch icon for iOS
+  },
 };
 
 export default function RootLayout({
