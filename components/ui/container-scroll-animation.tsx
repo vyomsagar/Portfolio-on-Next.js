@@ -54,9 +54,6 @@ export const ContainerScroll = ({
   );
 };
 
-import { MotionValue } from "motion/react";
-// or if using framer-motion: import { MotionValue } from "framer-motion";
-
 type HeaderProps = {
   translate: MotionValue<number>;
   titleComponent: React.ReactNode;
