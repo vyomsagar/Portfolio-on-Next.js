@@ -91,7 +91,7 @@ export const TextScroll: React.FC<TextScrollProps> = ({
 
     return (
       <div
-        className="w-full overflow-hidden -mt-20 whitespace-nowrap bg-slate-950"
+        className="w-full overflow-hidden -mt-20 whitespace-nowrap"
         ref={containerRef}
       >
         <motion.div className={cn("inline-block", className)} style={{ x }}>
