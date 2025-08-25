@@ -102,7 +102,7 @@ const Page = () => {
       
       
 </div>
-      <TextScroll className="mt-40 w-[100vw]" text="Hello I'm Vyom Sagar" />
+      <TextScroll className="mt-40 w-[100vw]" text="Hello I&apos;m Vyom Sagar" />
       </LampContainer>
 
       <ContainerScroll titleComponent={<h1></h1>}>
