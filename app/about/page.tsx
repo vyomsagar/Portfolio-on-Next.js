@@ -52,8 +52,8 @@ const About = () => {
           <br />
           <h2>My Background</h2>
           <p>
-            With a background in Computer Science, I've worked on a range of
-            projects—from personal websites to full-scale web applications.{" "}
+            With a background in Computer Science, I&apos;ve worked on a range of projects—from personal websites to full-scale web applications.
+{" "}
             <br />I enjoy solving complex problems and turning ideas into
             reality through code.
           </p>
