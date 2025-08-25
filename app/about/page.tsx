@@ -30,30 +30,30 @@ const About = () => {
     {
       title: "Resume",
       icon: <IoSchool className="w-6 h-6" />,
-      href: "/vyom-sagar.pdf"
+      href: "/vyom-sagar.pdf",
     },
   ];
   return (
-    <div className="text-white text-center">
+    <div className="text-white text-center ">
       <FloatingDock
         items={items}
         desktopClassName="fixed bottom-6 left-1/2 -translate-x-1/2 shadow-lg z-99"
         mobileClassName="fixed bottom-6 right-6 z-99"
       ></FloatingDock>
-      <LampContainer>
-        <div>
+      <LampContainer className="pt-40">
+        <div className="pt-40">
           <h1 className="text-xl font-bold">About Me</h1>
           <p>
-            Hi, I&apos;m Vyom Sagar, a passionate web developer focused on crafting
-            clean and user-friendly web experiences.
+            Hi, I&apos;m Vyom Sagar, a passionate web developer focused on
+            crafting clean and user-friendly web experiences.
             <br /> Based in Delhi, I specialize in building modern websites and
             applications using technologies like Next.js and React.
           </p>
           <br />
           <h2>My Background</h2>
           <p>
-            With a background in Computer Science, I&apos;ve worked on a range of projects—from personal websites to full-scale web applications.
-{" "}
+            With a background in Computer Science, I&apos;ve worked on a range
+            of projects—from personal websites to full-scale web applications.{" "}
             <br />I enjoy solving complex problems and turning ideas into
             reality through code.
           </p>
@@ -67,17 +67,18 @@ const About = () => {
           <br />
           <h2 className="text-xl font-bold">Education</h2>
           <p>
-            I graduated in 2025 with a Bachelor&apos;s degree in Computer Science.
+            I graduated in 2025 with a Bachelor&apos;s degree in Computer
+            Science.
             <br /> My studies provided me with a solid foundation in software
             development, algorithms, and problem-solving skills.
           </p>
           <br />
           <h2>Interests</h2>
           <p>
-            When I&apos;m not coding, you&apos;ll find me exploring new technologies,
-            reading, or spending time outdoors. <br />I enjoy learning
-            constantly and believe in the power of technology to make a positive
-            impact.
+            When I&apos;m not coding, you&apos;ll find me exploring new
+            technologies, reading, or spending time outdoors. <br />I enjoy
+            learning constantly and believe in the power of technology to make a
+            positive impact.
           </p>
           <h2>Let&apos;s Connect</h2>
           <p>
@@ -89,11 +90,10 @@ const About = () => {
         </div>
         <div>
           <WrapButton className="mt-10" href="/vyom-sagar.pdf">
-          <IoReaderOutline className="animate-spin " />
-          My Resume
-        </WrapButton>
+            <IoReaderOutline className="animate-spin " />
+            My Resume
+          </WrapButton>
         </div>
-        
       </LampContainer>
     </div>
   );
