@@ -238,7 +238,8 @@ const skills = () => {
               <MaskedDiv
                 maskType={"type-1"}
                 size={0.8}
-                backgroundColor="#374151"
+                backgroundColor="#0f172a
+"
                 className="mb-4 w-full max-w-[160px]"
               >
                 <Image src={img} alt={title} width={100} height={100} />
